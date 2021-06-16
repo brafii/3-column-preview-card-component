@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --left-side-color: #e28525;
+    --middle-color: #016972;
+    --right-side-color: #00403f;
+    --padding-for-allsizes: 40px;
+}
+
+body{
+    background-color: #f2f2f2;
+    color: #fff;
+}
+.content-info{
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+p{
+    margin-top: 25px;
+    line-height: 1.4em;
+}
+#left1{
+    margin-top: 55px;
+    color: var(--left-side-color);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 18px 10px 18px;
+}
+#middle1{
+    margin-top: 55px;
+    color: var(--middle-color);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 18px 10px 18px;
+}
+#right1{
+    margin-top: 55px;
+    color: var(--right-side-color);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 18px 10px 18px;
+}
+.left-side{
+    background-color: var(--left-side-color);
+    padding: var(--padding-for-allsizes);
+    border-radius: 10px 0 0 10px;
+}
+.middle{
+    background-color: var(--middle-color);
+    padding: var(--padding-for-allsizes);
+}
+.right-side{
+    background-color: var(--right-side-color);
+    padding: var(--padding-for-allsizes);
+    border-radius: 0 10px 10px 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 625px) {
+
+    .content-info{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .left-side{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right-side{
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+
+    .content-info{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .left-side{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right-side{
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 30px;
+    }
+
+}
